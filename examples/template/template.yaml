@@ -9,6 +9,19 @@ spec:
   owner: user:guest
   type: service
 
+---
+
+apiVersion: scaffolder.backstage.io/v1beta3
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
+kind: Template
+metadata:
+  name: MicroserviceForAppBackstage
+  title: Example Spring Boot Application.
+  description: Microservicio de citas de laboratorio, pacientes y tipos de exámenes.
+spec:
+  owner: Yenny.Yurani.Taborda@ibm.com
+  type: service
+
   # These parameters are used to generate the input form in the frontend, and are
   # used to gather input data for the execution of the template.
   parameters:

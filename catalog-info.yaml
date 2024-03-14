@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: app-backstage
+  #namespace: proper-systems
   description: An example of a Backstage application.
   # Example for optional annotations
   # annotations:
@@ -9,5 +10,27 @@ metadata:
   #   backstage.io/techdocs-ref: dir:.
 spec:
   type: website
-  owner: john@example.com
+  owner: Yenny.Yurani.Taborda@ibm.com
+  lifecycle: experimental
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: MicroserviceForAppBackstage
+  #namespace: proper-systems
+  description: Microservicio de citas de laboratorio, pacientes y tipos de exámenes
+spec:
+  type: library
+  owner: Yenny.Yurani.Taborda@ibm.com
+  lifecycle: experimental
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: MicroserviceForAppBackstage
+  #namespace: proper-systems
+  description: Microservicio de citas de laboratorio, pacientes y tipos de exámenes
+spec:
+  type: website
+  owner: Yenny.Yurani.Taborda@ibm.com
   lifecycle: experimental
