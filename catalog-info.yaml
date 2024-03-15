@@ -20,6 +20,6 @@ metadata:
   #namespace: proper-systems
   description: Microservicio de citas de laboratorio, pacientes y tipos de exámenes
 spec:
-  type: Website
+  type: service
   owner: Yenny.Yurani.Taborda@ibm.com
   lifecycle: experimental
