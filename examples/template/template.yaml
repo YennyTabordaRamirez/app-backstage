@@ -8,9 +8,7 @@ metadata:
 spec:
   owner: user:guest
   type: service
-
----
-
+---  
 apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
