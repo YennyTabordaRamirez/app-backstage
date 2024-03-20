@@ -14,7 +14,8 @@ backend:
   listen: ':7007'
 
   # config options: https://node-postgres.com/api/client
-  database:
+  database:    
+    # config options: https://node-postgres.com/apis/client
     client: pg
     connection:
       host: ${POSTGRES_HOST}

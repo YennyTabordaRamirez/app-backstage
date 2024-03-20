@@ -22,6 +22,7 @@
     "@backstage/core-plugin-api": "^1.9.0",
     "@backstage/integration-react": "^1.1.24",
     "@backstage/plugin-api-docs": "^0.11.0",
+    "@backstage/plugin-app-backend": "^0.3.61",
     "@backstage/plugin-catalog": "^1.17.0",
     "@backstage/plugin-catalog-common": "^1.0.21",
     "@backstage/plugin-catalog-graph": "^0.4.0",

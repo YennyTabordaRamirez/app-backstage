@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backstage2
+  namespace: platform2-backstage
+spec:
+  selector:
+    app: backstage2
+  ports:
+    - name: http
+      port: 80
+      targetPort: http

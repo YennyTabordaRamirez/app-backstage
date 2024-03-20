@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backstage2
+  namespace: platform2-backstage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backstage2
+  template:
+    metadata:
+      labels:
+        app: backstage2
+    spec:
+      serviceAccountName: backstage3
+      containers:
+        - name: backstage2
+          image: yennytr/app-backstage:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 7007
+          envFrom:
+            - secretRef:
+                name: postgres2-secrets
+            - secretRef:
+                name: backstage2-secrets
+          volumeMounts:
+          - name: app-vol
+            mountPath: /app/app-config.yaml
+            subPath:  app-config.yaml
+          - name: app-vol-prod
+            mountPath: /app/app-config.production.yaml
+            subPath:  app-config.production.yaml
+      volumes:
+      - name: app-vol
+        configMap:
+          name: app-configmap
+      - name: app-vol-prod
+        configMap:
+          name: app-configprodmap
+          
