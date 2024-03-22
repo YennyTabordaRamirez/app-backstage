@@ -56,7 +56,7 @@
     ]
   },
   "dependencies": {
-    "@backstage/plugin-catalog-backend": "^1.18.0",
+    "@backstage/plugin-catalog-backend": "^1.19.0",
     "@backstage/plugin-catalog-react": "^1.11.0"
   }
 }

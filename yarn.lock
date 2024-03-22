@@ -3376,6 +3376,49 @@
     yn "^4.0.0"
     zod "^3.22.4"
 
+"@backstage/plugin-catalog-backend@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.npmjs.org/@backstage/plugin-catalog-backend/-/plugin-catalog-backend-1.19.0.tgz#26fe088d98b2c07469b1d3b63c507c7c1a736c57"
+  integrity sha512-6T/PA4PKxVUFRsQp/nxAuiu/uOiSEpqpKr/WiNLRly1MTGQwGNDYYntlGpUXqxHZ21S8OEznKf9HtAZHFOvWYw==
+  dependencies:
+    "@backstage/backend-common" "^0.21.4"
+    "@backstage/backend-openapi-utils" "^0.1.7"
+    "@backstage/backend-plugin-api" "^0.6.14"
+    "@backstage/backend-tasks" "^0.5.19"
+    "@backstage/catalog-client" "^1.6.1"
+    "@backstage/catalog-model" "^1.4.5"
+    "@backstage/config" "^1.2.0"
+    "@backstage/errors" "^1.2.4"
+    "@backstage/integration" "^1.9.1"
+    "@backstage/plugin-catalog-common" "^1.0.22"
+    "@backstage/plugin-catalog-node" "^1.9.0"
+    "@backstage/plugin-events-node" "^0.3.0"
+    "@backstage/plugin-permission-common" "^0.7.13"
+    "@backstage/plugin-permission-node" "^0.7.25"
+    "@backstage/plugin-search-backend-module-catalog" "^0.1.19"
+    "@backstage/types" "^1.1.1"
+    "@opentelemetry/api" "^1.3.0"
+    "@types/express" "^4.17.6"
+    codeowners-utils "^1.0.2"
+    core-js "^3.6.5"
+    express "^4.17.1"
+    fast-json-stable-stringify "^2.1.0"
+    fs-extra "^11.2.0"
+    git-url-parse "^14.0.0"
+    glob "^7.1.6"
+    knex "^3.0.0"
+    lodash "^4.17.21"
+    luxon "^3.0.0"
+    minimatch "^9.0.0"
+    node-fetch "^2.6.7"
+    p-limit "^3.0.2"
+    prom-client "^15.0.0"
+    uuid "^9.0.0"
+    winston "^3.2.1"
+    yaml "^2.0.0"
+    yn "^4.0.0"
+    zod "^3.22.4"
+
 "@backstage/plugin-catalog-common@^1.0.21":
   version "1.0.21"
   resolved "https://registry.npmjs.org/@backstage/plugin-catalog-common/-/plugin-catalog-common-1.0.21.tgz#1dba78e151079cab0137158b71427276799d4104"
@@ -3473,6 +3516,20 @@
   version "1.8.0"
   resolved "https://registry.npmjs.org/@backstage/plugin-catalog-node/-/plugin-catalog-node-1.8.0.tgz#b464cdfda921c04b1c16719185c519539c410f82"
   integrity sha512-jQX/O/9gEQ57MlYzInTsCF73UfYYRJtzWogdZBvvQhSi6y0iXi4quQ6KCyBJDAz7R15p7IFFmnAhnQSdahc6YA==
+  dependencies:
+    "@backstage/backend-plugin-api" "^0.6.14"
+    "@backstage/catalog-client" "^1.6.1"
+    "@backstage/catalog-model" "^1.4.5"
+    "@backstage/errors" "^1.2.4"
+    "@backstage/plugin-catalog-common" "^1.0.22"
+    "@backstage/plugin-permission-common" "^0.7.13"
+    "@backstage/plugin-permission-node" "^0.7.25"
+    "@backstage/types" "^1.1.1"
+
+"@backstage/plugin-catalog-node@^1.9.0":
+  version "1.9.0"
+  resolved "https://registry.npmjs.org/@backstage/plugin-catalog-node/-/plugin-catalog-node-1.9.0.tgz#e54e53327e40d5db749a9be64d6afca2e959b110"
+  integrity sha512-+9pxhGhOZYScLdjthCA/MpfkrykQ2nkbL2F/28BOp1x8TfobooRbnpY77ORNlAPuOFzvwDOjdOu/bnsL3DLCmQ==
   dependencies:
     "@backstage/backend-plugin-api" "^0.6.14"
     "@backstage/catalog-client" "^1.6.1"
@@ -4099,6 +4156,24 @@
     "@backstage/errors" "^1.2.4"
     "@backstage/plugin-catalog-common" "^1.0.22"
     "@backstage/plugin-catalog-node" "^1.8.0"
+    "@backstage/plugin-permission-common" "^0.7.13"
+    "@backstage/plugin-search-backend-node" "^1.2.18"
+    "@backstage/plugin-search-common" "^1.2.11"
+
+"@backstage/plugin-search-backend-module-catalog@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.npmjs.org/@backstage/plugin-search-backend-module-catalog/-/plugin-search-backend-module-catalog-0.1.19.tgz#2681ae9953d49ad8f173184631e5830333c1080e"
+  integrity sha512-jTj6FLOh5MLDI9ag32CSckJ/KSlJUq9sL2e+TOdttAKX1ifj/cdIlIK5LdHS9vAFpwQv2DQbn/CwF/eQkPl4eQ==
+  dependencies:
+    "@backstage/backend-common" "^0.21.4"
+    "@backstage/backend-plugin-api" "^0.6.14"
+    "@backstage/backend-tasks" "^0.5.19"
+    "@backstage/catalog-client" "^1.6.1"
+    "@backstage/catalog-model" "^1.4.5"
+    "@backstage/config" "^1.2.0"
+    "@backstage/errors" "^1.2.4"
+    "@backstage/plugin-catalog-common" "^1.0.22"
+    "@backstage/plugin-catalog-node" "^1.9.0"
     "@backstage/plugin-permission-common" "^0.7.13"
     "@backstage/plugin-search-backend-node" "^1.2.18"
     "@backstage/plugin-search-common" "^1.2.11"
